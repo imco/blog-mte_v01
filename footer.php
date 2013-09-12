@@ -25,5 +25,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ff, s);
   })();
 </script>--></div> 
+<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/jquery.js" /></script>
+<script type="text/javascript" src="<?php bloginfo( 'template_directory' ); ?>/js/interactions.js" /></script>
 </body>
  </html>

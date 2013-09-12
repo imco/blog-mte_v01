@@ -19,7 +19,6 @@
 			<p>
 				<?php //$this->print_img_tag('schoolchildren.png'); ?>
 				<?php the_post_thumbnail(0,array(
-					'class' => 'noste',
 					'alt' => 'post name',
 				));?>
 			<?php if(is_single()) 
@@ -27,33 +26,7 @@
 			      else
 				the_excerpt(); ?> 
 			</p>
-			<div class='share-bt bl'>
-				<div class='social'>
-					<div class='btns'>
-						<a href='#' class='share-face' 
-				 	 	onclick="
-						      window.open(
-				            		'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
-					          	'El perfil', 
-						       	'width=626,height=436'); 
-							 return false;">
-						  </a>
-		
-						<div class='tweet'>
-							<span class='twitter-icon'></span>
-							 <a href='https://twitter.com/share' class='twitter-share-button' data-lang='en' data-text='Blog title' data-via='mejoratuescuela'>
-							  </a>
-						</div>
-						  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-					</div>
-				</div>
-				<a href='#' class='button-frame'>
-					<span class='bt-share'>
-						<?php //$this->print_img_tag('compartir/compartir.png');?>
-						Compartir
-					</span>
-				</a>
-			</div>
+			<?php include 'share.php' ?>
 			<div class='clear'></div>
 			<div class='shadow'></div>
 		</div>

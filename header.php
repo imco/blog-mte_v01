@@ -8,15 +8,15 @@
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/stickyFooter.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/main.css" />
 	<title>Mejora tu Escuela</title>
-	<link rel="canonical" href="http://comparatuescuela/blog" />
+	<?php $url = 'http://comparatuescuela.proyects.spaceshiplabs.com'?>
+	<link rel="canonical" href="<?=$url?>" />
  </head>
  <body>
  	<div id="wrap"><div id="main" class="clearfix"><div id="topBackRepeat">
 		<div id='header'>
 			
 <div class='menu blog'><div class='container'>
-<?php $url = 'http://comparatuescuela.proyects.spaceshiplabs.com'?>
-	<a href='/' class='logo'><img src='<?php bloginfo( 'template_directory' ); ?>/img/home/logo.png' alt='home/logo.png'  /></a>
+	<a href='<?=$url?>/' class='logo'><img src='<?php bloginfo( 'template_directory' ); ?>/img/home/logo.png' alt='home/logo.png'  /></a>
 	<a href='<?=$url?>/compara/'>CONOCE
 		<span class='icon sprites'></span>
 		<span class='circle'></span>

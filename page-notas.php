@@ -10,7 +10,7 @@ foreach($posts as $post) {
 		$images = get_children( 'post_type=attachment&post_mime_type=image&post_parent='.get_the_ID());
 		if (!empty($images)){
 			foreach($images as $attachment_id => $attachment ){
-				echo wp_get_attachment_image($attachment_id,'thumbnail');
+				echo wp_get_attachment_image($attachment_id,'full-size');
 				break 1;
 			}
 		}

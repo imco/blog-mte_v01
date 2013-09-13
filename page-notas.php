@@ -3,8 +3,7 @@
 	Template Name: notas
 */
 $posts = get_posts('category_name=portada&orderby=date');
-//while(have_posts()) : the_post(); ?>
-<?php foreach($posts as $post) {
+foreach($posts as $post) {
 	setup_postdata($post);?>
 	<div class='white-box column'>
 		<?php 

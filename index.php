@@ -6,7 +6,6 @@
  ?>
 <div class='blog container'>
 	<div class='column left'>
-	<?php //for($p=0;$p<2;$p++) { ?>
 	<?php while (have_posts()) : the_post(); ?>
 		<div class='post'>
 			<h1 class='title'>
@@ -17,7 +16,6 @@
 			</h2>
 
 			<p>
-				<?php //$this->print_img_tag('schoolchildren.png'); ?>
 				<?php the_post_thumbnail(0,array(
 					'alt' => 'post name',
 				));?>
@@ -37,7 +35,7 @@
 
 		<ul>
 
-		<?php query_posts('cat=-3&id=1');
+		<?php query_posts('orderby=date&showposts=10');
 		while (have_posts()) : the_post(); ?>
 			<li><a href='<?php the_permalink() ?>'><?php the_title() ?></a></li>
 		<?php endwhile;?>

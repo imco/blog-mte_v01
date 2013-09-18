@@ -3,6 +3,7 @@
 	Template Name: notas
 */
 $posts = get_posts('category_name=portada&orderby=date');
+$i = 0;
 foreach($posts as $post) {
 	setup_postdata($post);?>
 	<div class='white-box column'>
@@ -10,12 +11,12 @@ foreach($posts as $post) {
 		$images = get_children( 'post_type=attachment&post_mime_type=image&post_parent='.get_the_ID());
 		if (!empty($images)){
 			foreach($images as $attachment_id => $attachment ){
-				echo wp_get_attachment_image($attachment_id,'full-size');
+				echo "<a href='".get_permalink()."' >".wp_get_attachment_image($attachment_id,'home-size').'</a>';
 				break 1;
 			}
 		}
 		?>
-		<h2><?php the_title() ?></h2>
+		<h2><a href='<?php the_permalink() ?>' ><?php the_title() ?></a></h2>
 		<hr/>
 		<p><?php the_excerpt(); ?> </p>
 				<p><a href='<?php the_permalink() ?>' >Leer más</a></p>

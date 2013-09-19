@@ -37,4 +37,15 @@ function custom_the_content(){
 	}
 	echo $contentdom->saveHTML();
 }
+
+function shorten_url($url){
+		//include 'ApiHootSuite.php';
+		require_once 'ApiHootSuite.php';
+		$hootSuite = new ApiHootSuite('AiJQogmkItjGluMOum9GD');
+		$shortUrl = $hootSuite->shorten($url);
+		return $shortUrl['results']['shortUrl'];
+		
+		//var_dump('algo');
+    
+}
 ?>

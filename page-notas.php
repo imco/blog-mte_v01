@@ -19,6 +19,6 @@ foreach($posts as $post) {
 		<h2><a href='<?php the_permalink() ?>' ><?php the_title() ?></a></h2>
 		<hr/>
 		<p><?php the_excerpt(); ?> </p>
-				<p><a href='<?php the_permalink() ?>' >Leer más</a></p>
+		<p><a href='<?php the_permalink() ?>' >Leer más</a></p>
 	</div>
 <?php } ?>

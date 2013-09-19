@@ -63,12 +63,12 @@
 <div class="breadcrumb blog_breadcrumb">
 	<ul>
 		<li>
-			<a href="/">
+			<a href="http://www.mejoratuescuela.org">
 				<img src='<?php bloginfo( 'template_directory' ); ?>/img/breadcrumb/home.png' alt='breadcrumb/home.png'  />			</a>
 		</li>
 
 				<li>
-									<a class='current' href="#">Blog</a>
+									<a class='current' href="/">Blog</a>
 									
 			</li>
 				

@@ -16,13 +16,8 @@
 			</h2>
 
 			<p>
-				<?php the_post_thumbnail(0,array(
-					'alt' => 'post name',
-				));?>
-			<?php if(is_single()) 
-				the_content();
-			      else
-				the_excerpt(); ?> 
+
+			<?php custom_the_content(); ?> 
 			</p>
 			<?php include 'share.php' ?>
 			<div class='clear'></div>

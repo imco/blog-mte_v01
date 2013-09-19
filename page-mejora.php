@@ -24,4 +24,4 @@ foreach($posts as $post) {
 ?>
 <div class='column left'><?=$content[0]?></div>
 <div class='column center'><?=$content[1]?></div>
-<div class='column right'><?=$content[2]?></div
+<div class='column right'><?=$content[2]?></div>

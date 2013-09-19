@@ -908,8 +908,8 @@ body .ui-autocomplete{border-radius:0;background:none;border:none;padding:0;}
 #content .blog .left .title{background-image:url(../img/home/texture_blue.png);padding-left:27px;line-height:42px;font-size:23px;}
 #content .blog .left .title a{color:white;}
 #content .blog .left .post{background-color:rgba(255,255,255,.3);margin-bottom:22px;}
-#content .blog .left .info{background-color:rgba(255,255,255,.8);padding-left:27px;font-size:23px;line-height:36px;}
-#content .blog .left .date{font-size:18px;padding-left:1px;}
+#content .blog .left .info{background-color:rgba(255,255,255,.8);padding-left:27px;font-size:23px;line-height:27px;}
+#content .blog .left .date{font-size:15px;padding-left:1px;}
 #content .blog .left p{padding:6px 27px;font-size:14px;text-align:justify;line-height:19px;}
 #content .blog .left p img{display:block;margin-bottom:12px;}
 #content .blog .right h1{background-color:#00aff0;font-size:18px;text-align:center;line-height:53px;height:51px;font-weight:bold;}

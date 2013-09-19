@@ -10,7 +10,7 @@
 		<div class='post'>
 			<h1 class='title'>
 			<a href='<?php the_permalink() ?>'><?php the_title() ?></a></h1>
-			<h2 class='info'><?=the_author_meta('user_nicename')?> |
+			<h2 class='info'>
 				<span class='date'><?php the_time('jS. M. Y'); ?></span>
 					
 			</h2>

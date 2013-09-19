@@ -22,4 +22,4 @@ foreach($posts as $post) {
 	$content .= '<h2>'.get_the_title().'</h2><hr/><p></p></div>';
 }
 ?>
-<div id='mejora-note-container'><?=$content?></div>
+<?=$content?>

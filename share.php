@@ -6,10 +6,11 @@
 			$urlFb = $this->shorten_url($url."#facebook");
 			$urlTwitter = $this->shorten_url($url."#twitter");
 			*/
-			$urlFb = '';
-			$urlTwitter = '';
-			$title = '';
-			$description = '';
+			
+			$urlFb = shorten_url(get_permalink()."#facebook");
+			$urlTwitter = shorten_url(get_permalink()."#twitter");
+			$title = get_the_title();
+			$description = get_the_excerpt();
 			?>
 			<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=<?=$urlFb?>&p[images][0]=<?=$url_logo?>&p[title]=<?=$title?>&p[summary]=<?=$description?>" class='share-face' target='_blank' >
 				  </a>

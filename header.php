@@ -8,8 +8,9 @@
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/stickyFooter.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/main.css" />
 	<title>Mejora tu Escuela</title>
-	<?php $url = 'http://comparatuescuela.proyects.spaceshiplabs.com'?>
-	<link rel="canonical" href="<?=$url?>" />
+	<?php $url = 'http://www.mejoratuescuela.org'?>
+	<link rel="canonical" href="<?php bloginfo('url') ?>" />
+	
  </head>
  <body>
  	<div id="wrap"><div id="main" class="clearfix"><div id="topBackRepeat">

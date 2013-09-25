@@ -3,7 +3,7 @@
  <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-	<link rel="shortcut icon" href="http://comparatuescuela//templates/mtev1/img/home/favicon.ico" />
+	<link rel="shortcut icon" href="<?php bloginfo( 'template_directory' ); ?>/img/home/favicon.ico" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/reset.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/stickyFooter.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/main.css" />

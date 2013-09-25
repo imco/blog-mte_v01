@@ -19,7 +19,7 @@ foreach($posts as $post) {
 			break 1;
 		}
 	}
-	$content[$control++%3] .= '<h2>'.get_the_title().'</h2><hr/><p></p></div>';
+	$content[$control++%3] .= '<a href='.get_permalink().'><h2>'.get_the_title().'</h2></a><hr/><p></p></div>';
 }
 ?>
 <div class='column left'><?=$content[0]?></div>

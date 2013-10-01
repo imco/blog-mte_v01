@@ -25,7 +25,7 @@
 		echo "<meta property='og:description' content='".get_the_excerpt()."' />";
 	}
 	if($url_logo == '')
-		$url_logo = get_bloginfo( 'template_directory' )."/img/home/logo.png";
+		$url_logo = get_bloginfo( 'template_directory' )."/img/logof.png";
 	
 	echo "<meta property='og:image' content='{$url_logo}' />";
 	?>

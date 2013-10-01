@@ -2,7 +2,7 @@
 /*
 	Template Name: mejora
 */
-$posts = get_posts('category_name=mejora&orderby=date');
+$posts = get_posts('category_name=mejora&posts_per_page=-1&orderby=date');
 $column = array('left','center','right');
 ?>
 <?php 

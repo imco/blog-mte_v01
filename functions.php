@@ -45,8 +45,6 @@ function shorten_url($url){
 		$hootSuite = new ApiHootSuite('AiJQogmkItjGluMOum9GD');
 		$shortUrl = $hootSuite->shorten($url);
 		return $shortUrl['results']['shortUrl'];
-		
-		//var_dump('algo');
     
 }
 ?>

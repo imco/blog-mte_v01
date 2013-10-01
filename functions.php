@@ -35,7 +35,8 @@ function custom_the_content(){
 			}
 		}
 	}
-	echo $contentdom->saveHTML();
+	$html = nl2br($contentdom->saveHTML());
+	echo $html;
 }
 
 function shorten_url($url){

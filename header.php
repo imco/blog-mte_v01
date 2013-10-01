@@ -17,7 +17,8 @@
 		if (!empty($images)){
 			foreach($images as $attachment_id => $attachment ){
 				//$url_logo = wp_get_attachment_image($attachment_id,'home-size');
-				$url_logo=wp_get_attachment_url($attachment_id);
+				$url_logo=wp_get_attachment_image_src($attachment_id,'home-size');
+				$url_logo = $url_logo[0];
 				break 1;
 			}
 		}

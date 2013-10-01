@@ -24,7 +24,8 @@
 			if($url_logo == '')
 				$url_logo = bloginfo( 'template_directory' )."/img/home/logo.png";
 			?>
-			<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=<?=$urlFb?>&p[images][0]=<?=$url_logo?>&p[title]=<?=$title?>&p[summary]=<?=$description?>" class='share-face' target='_blank' >
+<!--			<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=<?=$urlFb?>&p[images][0]=<?=$url_logo?>&p[title]=<?=$title?>&p[summary]=<?=$description?>" class='share-face' target='_blank' >-->
+			<a href="http://www.facebook.com/sharer/sharer.php?u=<?=$urlFb?>" class='share-face' target='_blank' >
 				  </a>
 
 				<div class="tweet">

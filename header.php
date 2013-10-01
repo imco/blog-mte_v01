@@ -10,6 +10,24 @@
 	<title>Mejora tu Escuela</title>
 	<?php $url = 'http://www.mejoratuescuela.org'?>
 	<link rel="canonical" href="<?php bloginfo('url') ?>" />
+	<?php 
+	$url_logo = '';
+	if(is_single()){
+		$images = get_children( 'post_type=attachment&post_mime_type=image&post_parent='.get_the_ID());
+		if (!empty($images)){
+			foreach($images as $attachment_id => $attachment ){
+				//$url_logo = wp_get_attachment_image($attachment_id,'home-size');
+				$url_logo=wp_get_attachment_url($attachment_id);
+				break 1;
+			}
+		}
+		echo "<meta property='og:description' content='".get_the_excerpt()."' />";
+	}
+	if($url_logo == '')
+		$url_logo = get_bloginfo( 'template_directory' )."/img/home/logo.png";
+	
+	echo "<meta property='og:image' content='{$url_logo}' />";
+	?>
 	
  </head>
  <body>

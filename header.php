@@ -26,6 +26,7 @@
 
 		$url_c = get_permalink();
 		$description = get_the_excerpt();
+		$description = str_replace('excerpt','',$description);
 	}else{
 		$description = 'MejoraTuEscuela.org es una plataforma que busca promover la participación ciudadana para transformar la educación en México';
 		$url_c = get_bloginfo('url');

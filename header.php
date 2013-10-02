@@ -22,7 +22,10 @@
 				break 1;
 			}
 		}
-		echo "<meta property='og:description' content='".get_the_excerpt()."' />";
+		echo "<meta property='og:description' content='".the_excerpt()."' />";
+	}else{
+		echo "<meta property='og:description' content='' />";
+	
 	}
 	if($url_logo == ''){
 		$url_logo = get_bloginfo( 'template_directory' )."/img/logof.png";

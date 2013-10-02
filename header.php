@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/main.css" />
 	<title>Mejora tu Escuela</title>
 	<?php $url = 'http://www.mejoratuescuela.org'?>
-	<link rel="canonical" href="<?php bloginfo('url') ?>" />
+	<!--<link rel="canonical" href="<?php bloginfo('url') ?>" />-->
 	<?php 
 	$url_logo = '';
 	if(is_single()){
@@ -30,8 +30,8 @@
 	echo "<meta property='og:image' content='{$url_logo}' />";
 	?>
 	<meta property="og:image:type" content="image/png">
-	<meta property="og:image:width" content="300">
-	<meta property="og:image:height" content="300">
+	<meta property="og:image:width" content="250">
+	<meta property="og:image:height" content="220">
 	
  </head>
  <body>

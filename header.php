@@ -22,9 +22,9 @@
 				break 1;
 			}
 		}
-		echo "<meta property='og:description' content='".the_excerpt()."' />";
+		echo "<meta property='og:description' content='".get_the_excerpt()."' />";
 	}else{
-		echo "<meta property='og:description' content='' />";
+		echo "<meta property='og:description' content='MejoraTuEscuela.org es una plataforma que busca promover la participación ciudadana para transformar la educación en México' />";
 	
 	}
 	if($url_logo == ''){

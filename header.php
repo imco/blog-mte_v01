@@ -24,14 +24,16 @@
 		}
 		echo "<meta property='og:description' content='".get_the_excerpt()."' />";
 	}
-	if($url_logo == '')
+	if($url_logo == ''){
 		$url_logo = get_bloginfo( 'template_directory' )."/img/logof.png";
+	}else{
 	
-	echo "<meta property='og:image' content='{$url_logo}' />";
+		echo '<meta property="og:image:type" content="image/png">';
+	}
+		echo "<meta property='og:image' content='{$url_logo}' />";
 	?>
-	<meta property="og:image:type" content="image/png">
-	<meta property="og:image:width" content="250">
-	<meta property="og:image:height" content="220">
+	<!--<meta property="og:image:width" content="250">
+	<meta property="og:image:height" content="220">-->
 	
  </head>
  <body>

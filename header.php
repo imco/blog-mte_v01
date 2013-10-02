@@ -13,6 +13,8 @@
 	<?php 
 	$url_logo = '';
 	if(is_single()){
+		$post = get_post(get_the_ID());
+		setup_postdata($post);
 		$images = get_children( 'post_type=attachment&post_mime_type=image&post_parent='.get_the_ID());
 		if (!empty($images)){
 			foreach($images as $attachment_id => $attachment ){
@@ -22,18 +24,21 @@
 				break 1;
 			}
 		}
-		echo "<meta property='og:description' content='".get_the_excerpt()."' />";
+
+		$url_c = get_bloginfo('url').get_permalink();
+		$description = get_the_excerpt();
 	}else{
-		echo "<meta property='og:description' content='MejoraTuEscuela.org es una plataforma que busca promover la participación ciudadana para transformar la educación en México' />";
+		$description = 'MejoraTuEscuela.org es una plataforma que busca promover la participación ciudadana para transformar la educación en México';
+		$url_c = get_bloginfo('url');
 	
 	}
 	if($url_logo == ''){
 		$url_logo = get_bloginfo( 'template_directory' )."/img/logof.png";
-	}else{
-	
 		echo '<meta property="og:image:type" content="image/png">';
 	}
-		echo "<meta property='og:image' content='{$url_logo}' />";
+	echo "<meta property='og:image' content='{$url_logo}' />";
+	echo "<meta property='og:description' content='{$description}' />";
+	echo "<link rel='canonical' href='{$url_c}' />";
 	?>
 	<!--<meta property="og:image:width" content="250">
 	<meta property="og:image:height" content="220">-->

@@ -30,8 +30,8 @@
 	echo "<meta property='og:image' content='{$url_logo}' />";
 	?>
 	<meta property="og:image:type" content="image/png">
-	<meta property="og:image:width" content="300">
-	<meta property="og:image:height" content="250">
+	<meta property="og:image:width" content="264">
+	<meta property="og:image:height" content="220">
 	
  </head>
  <body>

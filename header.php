@@ -9,7 +9,6 @@
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/main.css" />
 	<title>Mejora tu Escuela</title>
 	<?php $url = 'http://www.mejoratuescuela.org'?>
-	<!--<link rel="canonical" href="<?php bloginfo('url') ?>" />-->
 	<?php 
 	$url_logo = '';
 	if(is_single()){
@@ -25,7 +24,7 @@
 			}
 		}
 
-		$url_c = get_bloginfo('url').get_permalink();
+		$url_c = get_permalink();
 		$description = get_the_excerpt();
 	}else{
 		$description = 'MejoraTuEscuela.org es una plataforma que busca promover la participación ciudadana para transformar la educación en México';
@@ -34,8 +33,10 @@
 	}
 	if($url_logo == ''){
 		$url_logo = get_bloginfo( 'template_directory' )."/img/logof.png";
-		echo '<meta property="og:image:type" content="image/png">';
+		
 	}
+	$ext  = substr($url_logo,-3);
+	echo "<meta property='og:image:type' content='image/{$ext}'>";
 	echo "<meta property='og:image' content='{$url_logo}' />";
 	echo "<meta property='og:description' content='{$description}' />";
 	echo "<link rel='canonical' href='{$url_c}' />";

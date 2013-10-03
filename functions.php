@@ -14,16 +14,19 @@ function custom_the_content(){
 	'order' => 'ASC',
 	'orderby' => 'menu_order ID'));
 	$contentdom = new DOMDocument;
-	$contentdom->loadHTML(get_the_content());
+	$contentdom->encoding = 'utf-8';
+	$contentdom->loadHTML(utf8_decode(get_the_content()));
 	$imgs = $contentdom->getElementsByTagName('img');
 	foreach($attachments as $att_id => $attachment) {
 		$image=wp_get_attachment_image($attachment->ID, 'blog-size', false);
 		$largedom = new DOMDocument;
+
 		$largedom->loadHTML($image);
 		$largeimgs = $largedom->getElementsByTagName('img');
 		$largeimg = $largeimgs->item(0);
 		$full_img=wp_get_attachment_image($attachment->ID, 'full-size', false);
 		$fulldom = new DOMDocument;
+
 		$fulldom->loadHTML($full_img);
 		$fullimgs = $fulldom->getElementsByTagName('img');
 		$fullimg = $fullimgs->item(0);

@@ -11,7 +11,7 @@
 			<h1 class='title'>
 			<a href='<?php the_permalink() ?>'><?php the_title() ?></a></h1>
 			<h2 class='info'>
-				<span class='date'><?php the_time('jS. M. Y'); ?></span>
+				<span class='date'><?php the_time('j \d\e\ F \d\e\ Y  '); ?></span>
 					
 			</h2>
 

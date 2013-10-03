@@ -8,8 +8,43 @@
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/stickyFooter.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_directory' ); ?>/css/main.css" />
 	<title>Mejora tu Escuela</title>
-	<?php $url = 'http://comparatuescuela.proyects.spaceshiplabs.com'?>
-	<link rel="canonical" href="<?=$url?>" />
+	<?php $url = 'http://www.mejoratuescuela.org'?>
+	<?php 
+	$url_logo = '';
+	if(is_single()){
+		$post = get_post(get_the_ID());
+		setup_postdata($post);
+		$images = get_children( 'post_type=attachment&post_mime_type=image&post_parent='.get_the_ID());
+		if (!empty($images)){
+			foreach($images as $attachment_id => $attachment ){
+				//$url_logo = wp_get_attachment_image($attachment_id,'home-size');
+				$url_logo=wp_get_attachment_image_src($attachment_id,'home-size');
+				$url_logo = $url_logo[0];
+				break 1;
+			}
+		}
+
+		$url_c = get_permalink();
+		$description = get_the_excerpt();
+		$description = str_replace('excerpt','',$description);
+	}else{
+		$description = 'MejoraTuEscuela.org es una plataforma que busca promover la participación ciudadana para transformar la educación en México';
+		$url_c = get_bloginfo('url');
+	
+	}
+	if($url_logo == ''){
+		$url_logo = get_bloginfo( 'template_directory' )."/img/logof.png";
+		
+	}
+	$ext  = substr($url_logo,-3);
+	echo "<meta property='og:image:type' content='image/{$ext}'>";
+	echo "<meta property='og:image' content='{$url_logo}' />";
+	echo "<meta property='og:description' content='{$description}' />";
+	echo "<link rel='canonical' href='{$url_c}' />";
+	?>
+	<!--<meta property="og:image:width" content="250">
+	<meta property="og:image:height" content="220">-->
+	
  </head>
  <body>
  	<div id="wrap"><div id="main" class="clearfix"><div id="topBackRepeat">

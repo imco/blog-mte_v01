@@ -2,7 +2,7 @@
 /*
 	Template Name: notas
 */
-$posts = get_posts('category_name=portada&orderby=date');
+$posts = get_posts('category_name=portada&posts_per_page=-1&orderby=date');
 $i = 0;
 foreach($posts as $post) {
 	setup_postdata($post);?>

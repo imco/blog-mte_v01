@@ -47,4 +47,11 @@ function shorten_url($url){
 		return $shortUrl['results']['shortUrl'];
     
 }
+
+function custom_the_time($time){
+	$time = get_the_time($time);
+	$month = array('january','february','march','april','may','june','july','august','september','october','november','december');
+	$mes = array('enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','october','noviembre','diciembre');
+	return str_replace($month,$mes,$time);
+}
 ?>

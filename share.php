@@ -12,6 +12,7 @@
 			$urlMail = shorten_url(get_permalink()."#mail");
 			$title = get_the_title();
 			$description = get_the_excerpt();
+			$description = str_replace('excerpt','',$description);
 			$url_logo = '';
 			$images = get_children( 'post_type=attachment&post_mime_type=image&post_parent='.get_the_ID());
 			if (!empty($images)){

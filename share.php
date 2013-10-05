@@ -9,6 +9,7 @@
 			
 			$urlFb = shorten_url(get_permalink()."#facebook");
 			$urlTwitter = shorten_url(get_permalink()."#twitter");
+			$urlMail = shorten_url(get_permalink()."#mail");
 			$title = get_the_title();
 			$description = get_the_excerpt();
 			$url_logo = '';
@@ -22,7 +23,7 @@
 				}
 			}
 			if($url_logo == '')
-				$url_logo = bloginfo( 'template_directory' )."/img/home/logo.png";
+				$url_logo = get_bloginfo( 'template_directory' )."/img/home/logo.png";
 			?>
 <!--			<a href="http://www.facebook.com/sharer/sharer.php?s=100&p[url]=<?=$urlFb?>&p[images][0]=<?=$url_logo?>&p[title]=<?=$title?>&p[summary]=<?=$description?>" class='share-face' target='_blank' >-->
 			<a href="http://www.facebook.com/sharer/sharer.php?u=<?=$urlFb?>" class='share-face' target='_blank' >
@@ -33,6 +34,7 @@
 				  <span class="twitter-icon"></span>
 				</a>
 				</div>
+			<a href="mailto:?subject=<?=$title?>&amp;body=<?=$description.": ".$urlMail?>" class='share-face mail'  target='_blank' ></a>
 		</div>
 	</div>
 	<a href="#" class="button-frame">

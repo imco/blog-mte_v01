@@ -35,7 +35,7 @@
 				  <span class="twitter-icon"></span>
 				</a>
 				</div>
-			<a href="mailto:?subject=<?=$title?>&amp;body=<?=$description.": ".$urlMail?>" class='share-face mail'  target='_blank' ></a>
+			<a href="mailto:?subject=<?=$title?>&amp;body=<?=$title."\n".$description.": ".$urlMail."  \nwww.MejoraTuEscuela.org"?>" class='share-face mail'  target='_blank' ></a>
 		</div>
 	</div>
 	<a href="#" class="button-frame">

@@ -15,10 +15,10 @@
 					
 			</h2>
 
-			<p>
+			<div class='content-post'>
 
 			<?php custom_the_content(); ?> 
-			</p>
+			</div>
 			<?php include 'share.php' ?>
 			<div class='clear'></div>
 			<div class='shadow'></div>

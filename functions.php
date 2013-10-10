@@ -54,7 +54,7 @@ function shorten_url($url){
 function custom_the_time($time){
 	$time = get_the_time($time);
 	$month = array('January','February','March','April','May','June','July','August','September','October','November','December');
-	$mes = array('enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','october','noviembre','diciembre');
+	$mes = array('enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre');
 	return str_replace($month,$mes,$time);
 }
 ?>

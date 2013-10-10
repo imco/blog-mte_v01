@@ -30,7 +30,7 @@
 
 		<ul>
 
-		<?php query_posts('orderby=date&showposts=10');
+		<?php query_posts('orderby=date&showposts=20');
 		while (have_posts()) : the_post(); ?>
 			<li><a href='<?php the_permalink() ?>'><?php the_title() ?></a></li>
 		<?php endwhile;?>

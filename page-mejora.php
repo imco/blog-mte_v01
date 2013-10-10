@@ -22,7 +22,6 @@ foreach($posts as $post) {
 	$content[$control++%3] .= '<a href='.get_permalink().'><h2>'.get_the_title().'</h2></a><hr/><p></p></div>';
 }
 ?>
-<div class='column left'><?=$content[0]?></div>
-<div class='column center'><?=$content[1]?></div>
-
-
+<?=$content[0]?>
+<?=$content[1]?>
+<?=$content[2]?>

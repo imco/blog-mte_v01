@@ -19,7 +19,7 @@
 
 			<?php custom_the_content(); ?> 
 			</div>
-			<?php include 'share.php' ?>
+			<?php //include 'share.php'; echo $share; ?>
 			<div class='clear'></div>
 			<div class='shadow'></div>
 		</div>

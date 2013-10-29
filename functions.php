@@ -39,6 +39,11 @@ function custom_the_content(){
 		}
 	}
 	$html = nl2br($contentdom->saveHTML());
+	include 'share.php';
+	$l1 = strpos($html,'</a>');
+	$html1 = substr($html,0,$l1+4);
+	$html1 .= $share;
+	$html = $html1.substr($html,$l1+4);
 	echo $html;
 }
 

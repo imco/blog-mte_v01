@@ -10,7 +10,7 @@ $share .= '<div class="share-bt bl">
 			$urlFb = shorten_url(get_permalink()."#facebook");
 			$urlTwitter = shorten_url(get_permalink()."#twitter");
 			$urlMail = shorten_url(get_permalink()."#mail");
-			$title = get_the_title();
+			$title = str_replace('#','%23',get_the_title());
 			$description = get_the_excerpt();
 			$description = str_replace('excerpt','',$description);
 			$url_logo = '';

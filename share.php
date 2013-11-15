@@ -11,7 +11,6 @@ $share .= '<div class="share-bt bl">
 			$share .= "
 			<a href='http://www.facebook.com/sharer/sharer.php?u=".$urlFb."' class='share-face' target='_blank' >
 				  </a>
-
 				<div class='tweet'>
 				<a href='http://twitter.com/home?status=".$title." ".$urlTwitter." por @mejoratuescuela' target='_blank' >
 				  <span class='twitter-icon'></span>

@@ -27,4 +27,3 @@ $share .= '<div class="share-bt bl">
 		</span>
 	</a>
 </div><div class='clear'></div>";
-

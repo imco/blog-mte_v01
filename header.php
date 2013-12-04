@@ -37,6 +37,7 @@
 		
 	}
 	$ext  = substr($url_logo,-3);
+	echo "<meta property='og:title' content='".str_replace('#','%23',get_the_title())."'";
 	echo "<meta property='og:image:type' content='image/{$ext}'>";
 	echo "<meta property='og:image' content='{$url_logo}' />";
 	echo "<meta property='og:description' content='{$description}' />";
